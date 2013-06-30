@@ -197,8 +197,8 @@
 	if (sender.disabled) { return; }
 
 	int numItems = [Item MR_countOfEntitiesWithPredicate:[NSPredicate predicateWithFormat:@"dropped = NO"]];
-	if (numItems >= 2000) {
-		[Utilities showWarningWithTitle:@"Too many items in Inventory. Your Inventory can have no more than 2000 items."];
+	if (numItems >= 3000) {
+		[Utilities showWarningWithTitle:@"Too many items in Inventory. Your Inventory can have no more than 3000 items."];
 		return;
 	}
 
